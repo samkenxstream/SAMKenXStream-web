@@ -15,7 +15,7 @@ gitterpy
 gunicorn
 matplotlib
 Markdown==3.2.1
-reportlab==3.5.55
+reportlab==3.6.13
 requests
 requests_oauthlib
 Pillow==9.3.0
