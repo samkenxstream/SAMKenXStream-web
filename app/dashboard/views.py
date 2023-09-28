@@ -173,6 +173,9 @@ def oauth_connect(request, *args, **kwargs):
     return JsonResponse(user_profile, status=200, safe=False)
 
 
+
+
+
 def org_perms(request):
     if request.user.is_authenticated and getattr(request.user, 'profile', None):
         profile = request.user.profile
@@ -3128,7 +3131,7 @@ def get_passport_trust_bonus(request, handle):
 
 @require_GET
 def passport(request):
-    url = 'https://go.gitcoin.co/gitcoin-passport-0?utm_source=gitcoinco&utm_medium=referral&utm_campaign=topnav&utm_content=Passport'
+    url = 'https://gitcoin.co/passport?utm_source=gitcoinco&utm_medium=referral&utm_campaign=topnav&utm_content=Passport'
     return redirect(url)
 
 
@@ -4456,6 +4459,10 @@ def labs(request):
         'socials': socials
     }
     return TemplateResponse(request, 'labs.html', context)
+
+def move_to_buidlbox(request):
+    return TemplateResponse(request, 'bounty/move_to_buidlbox.html', {})
+
 
 
 @login_required
