@@ -31,7 +31,7 @@ eth-tester
 elasticsearch==7.10.0
 websockets
 web3==4.5.0
-eth-abi==1.1.1
+eth-abi==4.2.0
 mailchimp3==3.0.7
 django_chartit==0.2.9
 MechanicalSoup==1.3.0
